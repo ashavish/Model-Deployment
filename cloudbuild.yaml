@@ -1,7 +1,7 @@
 steps:
 #First Clone from Google Cloud Source Repository  
 - name: 'gcr.io/cloud-builders/git'
-  args: ['clone','https://github.com/ChetanTayal138/Model-Deployment']
+  args: ['clone','https://github.com/ashavish/Model-Deployment']
 
 #Build the image 
 - name: 'gcr.io/cloud-builders/docker'
@@ -24,7 +24,7 @@ steps:
   
 substitutions:
     #GCP Specific configuration. Please DON'T change anything
-    _PROJECT: videorecorder-274721
+    _PROJECT: ashaexps
     _ZONE: us-central1-c
     _GKE_CLUSTER: denoiser-cluster
     
